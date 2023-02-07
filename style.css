@@ -112,10 +112,36 @@ header .hdr img{
 .features .txt{
     width: 40%;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 .features .txt h1{
-    
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+.features .txt h1 span:first-child{
+    color: #131313;    
+}
+.features .txt h1 span:last-child{
+    color: #FF900E;
+}
+.features .txt p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin: 20px 0;
+}
+.features .txt a{
+    text-decoration: none;    
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
 }
