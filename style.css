@@ -2,224 +2,120 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans';
-    font-style: normal;
 }
 
-.banner{
-    width: 1600px;
-    height: 809px;
-    background-image: url("banner1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 4vh 0;
+}
+
+header .hdr{
+    max-width: 1440px;
+    padding: 0 2vw;
     margin: auto;
 }
-
-.btext{
-    width: 1460px;
-    height: 450px;
-    text-align: right;
-    padding-top: 200px;
+header .hdr .title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
-.banner .btext h1{
-    font-size: 65px;
-    line-height: 76px;
-    color: #151414;
-    
+@media only screen and (max-width: 768px) {
+    header .hdr .title{
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    header .hdr .title nav{
+        justify-content: space-around !important;
+        width: 100% !important;
+        margin: auto;
+        margin-bottom: 30px;
+        
+    }
 }
-.banner .btext p{
-    font-size: 16px;
-    line-height: 26px;
-    color: #444343;
-}
-.banner .btext button{
-    margin-top: 25px;
-    width: 160px;
-    height: 64px;
-    background: #F15B22;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #FFFFFF;
-    border: none;
-    font-weight: bold;
-
-}
-.Bbody{
-    display: table;
-    width: 1080px;
-    height: 725px;
-    margin: 100px auto;
-}
-.Bbody .image{
-    display: inline-block;
-    width: 569px;
-    height: 723.3px;
-}
-.Bbody .image img{
-    height: 100%;
-    width: 100%;
-}
-.Bbody .text{
-    display: inline-block;
-    margin-left: 85px;
-    width: 415px;
-    height: 400px;
-    padding-bottom: 115px;
-}
-.Bbody .text h1{
-    font-size: 40px;
-    line-height: 47px;
-    color: #151414;
-}
-.Bbody .text p{
-    font-size: 16px;
-    line-height: 26px;
-    color: #444343;
-    margin: 20px 0px;
-}
-.Bbody .text ul li{
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 26px;
-    color: #444343;
-}
-.Bbody .text span{
-    color: green;
-    font-weight: bolder;
-}
-
-.plan{
-    width: 1141px;
-    height: 300px;
-    margin: auto;
-    text-align: center;
-    color: #151414;
-}
-.plan table{
-    width: 100%;
-    margin-top: 30px;
-    
-}
-.plan h1{
-    font-size: 40px;
-    line-height: 47px;
-}
-.plan table p{
-    font-size: 25px;
-    line-height: 29px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.plan table p:last-child{
-    font-size: 25px;
-    line-height: 29px;
-    color: #737272;
-    font-weight: normal;
-}
-
-.Bimg{
-    width: 1140px;
-    height: 300px;
-    margin: 100px auto;
-    background-image: url('watch.png');
-    
-    border-radius: 8px;
-}
-.Bimg .blur{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%);
-}
-.Bimg .blur .content{
-    padding: 59px 64px;
-}
-.Bimg .blur .content h1{
-    font-size: 40px;
-    line-height: 47px;
-    color: #FFFFFF;
-}
-.Bimg .blur .content button{
-    width: 160px;
-    height: 64px;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #F15B22;
-    margin-top: 25px;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-}
-
-footer{
-    width: 100%;
-    height: 320px;
-    background-color: #151414;  
-    color: #FFFFFF;
-    padding: 100px 0;
-}
-footer .mid{
-    width: 1150px;
-    display: table;
-    margin: auto;
-}
-footer .future{
-    display: inline-block;
-    width: 485px;
-    height: 317px;
-}
-footer .future h1{
+header .hdr .title h1{
+    font-weight: 700;
     font-size: 45px;
     line-height: 53px;
-    color: #F8F8F8;
+    color: #131313;
 }
-footer .future p{
+header .hdr .title nav{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+header .hdr .title nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #424242;
+}
+header .hdr .hdbdy{
+    max-width: 868px;
+    margin: auto;
+    margin-top: 8vh;
+    text-align: center;
+}
+header .hdr .hdbdy h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+header .hdr .hdbdy p{
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    margin-top: 18px;
+    color: #727272;
+    margin-top: 25px;
 }
-footer .future a{
+header .hdr .hdbdy a{
     text-decoration: none;
-    color: #fff;
-}
-footer .future .icon{
-    margin-top: 18px;
-}
-footer .future .icon img{
-    width: 47px;
-    height: 46px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-footer .subscribe{
     display: inline-block;
-    width: 325px;
-    height: 317px;
-    margin-left: 330px;
-    margin-top: 0;
-}
-footer .subscribe h1{
-    font-size: 25px;
-}
-footer .subscribe input{
-    padding: 15px 60px 15px 15px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 25px 0;
-    color: #f3f3f3;
-    border: 1px solid #f3f3f3;
-    background-color: transparent;
-    outline: none;
-}
-footer .subscribe button{
-    width: 170px;
-    height: 64px;
+    
+    padding: 18px 20px;
+    font-weight: 600;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
-    color: #F15B22;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+header .hdr img{
+    width: 100%;
+}
+
+
+.features{
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    
+    
+}
+.features .imgs{
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+
+}
+.features .imgs img{
+    width: 342px;
+    height: 342px;
+}
+.features .txt{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.features .txt h1{
+    
 }
